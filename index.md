@@ -11,7 +11,7 @@ Its ***Circle::draw()*** function will draw a circle with three random numbers a
 Also, we create a loop of vertex with its own properties.
 <br>
 **Circle**
-```C
+```cpp
 class Circle
 {
 public:
@@ -24,7 +24,7 @@ public:
 <br>
 
 **Line Loop** 
-```c
+```cpp
 glBegin(GL_LINE_LOOP);
 	for (float i = 0.0; i < 2 * 3.14; i += 3.14 / 18)
 	{
@@ -41,7 +41,7 @@ We have a function ***void Draw()*** which draw the circles & delete them from t
 <br>
 
 **Global Properties**
-```c
+```cpp
 vector<Circle> circ;
 
 float WinWid = 600.0;
@@ -52,7 +52,7 @@ bool down = false;
 <br>
 
 **Draw()**
-```c
+```cpp
 
 	glClear(GL_COLOR_BUFFER_BIT);
 	glEnable(GL_ALPHA);
@@ -85,7 +85,7 @@ bool down = false;
 
 ***MouseMovePressed*** function is used for getting the coordinates of screen if mouse is still pressed.
 
-```c
+```cpp
 void MousePressed(int button, int state, int ax, int ay)
 {
 	down = button == GLUT_LEFT_BUTTON && state == GLUT_LEFT;
